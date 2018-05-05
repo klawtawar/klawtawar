@@ -1,0 +1,9 @@
+
+
+Follow document to Running Kubernetes on Google Compute Engine
+https://kubernetes.io/docs/getting-started-guides/gce/
+
+Create git repo: https://github.com/klawtawar/klawtawar.git
+
+Container Registry
+Google Container Registry provides secure, private Docker repository storage on Google Cloud Platform. You can use gcloud to push images to your registry , then you can pull images using an HTTP endpoint from any machine, whether it's a Google Compute Engine instance or your own hardware.
