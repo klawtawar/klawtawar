@@ -13,6 +13,8 @@
     cursor: pointer;
     top: 10px;
     left: 10px;
+    background-color: transparent;
+    
     
 }
 .sidebar{
@@ -60,7 +62,7 @@
 }
 
 .infoContainer{
-    background-color: white;
+    background-color: #fdfdfd;
     height: 70vh;
     width: 50vw;
     margin: 144px auto;
