@@ -13,6 +13,7 @@
     cursor: pointer;
     top: 10px;
     left: 10px;
+    
 }
 .sidebar{
     width: 430px;
@@ -60,23 +61,28 @@
 
 .infoContainer{
     background-color: white;
-    height: 80vh;
-    width: 80vw;
+    height: 70vh;
+    width: 50vw;
     margin: 144px auto;
     display: flex;    
     justify-content: space-around;
 }
+
 .devPic img{
-    height: 50vh;
-    width: auto;
-    float: left;
+    height: auto;
+    width: 50%;
+    position: relative;
+    vertical-align: top;
+    margin-left: 10%;
 }
+
 .devInfo{
     display: flex;
-    justify-content: center;
+    width: 80%;
+    height: 50%;
     flex-direction: column;
-    padding-bottom: 200px;
-    float: left;
+    margin-left: -10%;
+
 }
 
 .name{
@@ -97,6 +103,16 @@
 
 @media (max-width:1000px){
 
+    .container{
+        padding: 0 0em;
+        flex-direction: row;
+        column-count: 1;
+    }
+
+    .sidebarGo{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
     .sidebar{
         width: 130px;
         height: 100vh;
@@ -114,33 +130,28 @@
     }
     .infoContainer{
         background-color: white;
-        height: 80vh;
-        width: 30vw;
+        height: auto;
+        width: 30%;
         margin: 44px auto;
         display: flex;    
         justify-content:end;
-        bottom: 0%;
-    }
+        flex-direction: column;
 
-    .devPic img{
-        height:22%;
-        width: auto;
-        vertical-align: top;
-        align-items: center;
-        
-        
     }
 
     .devInfo{
-        display: flex;
-        justify-content:last baseline;
-        padding-bottom: 0px;
-        align-self: end;
-        margin-top: 0%;
-        align-items: center;
-        margin-left: 10%;
+        height: auto;
+        width: 280%;
+        margin-left: -90%;
+        vertical-align: top;
     }
 
+    .devPic img{   
+        width: 180%;
+        margin-top: 70%;
+        margin-left: -90%;
+        vertical-align:bottom;
+    }
 
     .name{
         font-size: 35px;
@@ -151,7 +162,7 @@
     }
     
     .role{
-        font-size: 25px;
+        font-size: 20px;
         font-family: 'Klee One', cursive;
         justify-content: center;
 
