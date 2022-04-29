@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     background-color: #fdfdfd;
-    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png"); 
 }
 
 .homeicon{
@@ -51,7 +51,7 @@
 
 }
 .main{
-    background-color: white;
+    /* background-color: white; */
     width: 90vw;
     height: 100vh;
 
@@ -62,44 +62,51 @@
 }
 
 .infoContainer{
-    background-color: #fdfdfd;
-    height: 70vh;
-    width: 50vw;
+    /* background-color: #fdfdfd; */
+    width: 60%;
     margin: 144px auto;
     display: flex;    
     justify-content: space-around;
+    align-self: auto;
+}
+.devInfo{
+    padding-top: 10%;
+    width: 90%;
+    vertical-align: middle;
+    flex-direction: column;
+    margin-left: -10%;
+    padding-left: -20%;
 }
 
 .devPic img{
-    height: auto;
-    width: 50%;
     position: relative;
     vertical-align: top;
     margin-left: 10%;
+    max-width: 100%;
 }
 
-.devInfo{
-    display: flex;
-    width: 80%;
-    height: 50%;
-    flex-direction: column;
-    margin-left: -10%;
-
+.imgContainer{
+    height: auto;
+    width: 50%;  
 }
+
+
 
 .name{
-    font-size: 55px;
+    text-align: left;
+    font-size: 300%;
     font-weight: bold;
     font-family: 'Klee One', cursive;
 }
 
 .role{
-    font-size: 45px;
+    text-align: left;
+    font-size: 130%;
     font-family: 'Klee One', cursive;
 }
 
 .location{
-    font-size: 35px;
+    font-size: 100%;
     font-family: 'Klee One', cursive;
 }
 
