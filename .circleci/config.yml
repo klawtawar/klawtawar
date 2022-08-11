@@ -1,1 +1,5 @@
-
+#Script to copy your GitHub Downloads to Google Cloud Storage
+#https://gist.github.com/imjasonh/4270274
+#$ go build main.go -o copy_downloads && chmod +x copy_downloads && ./copy_downloads \
+#      --repo=SomeGitHubUser/AndARepo
+#      --bucket=google-storage-bucket-that-i-own
