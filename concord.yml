@@ -12,5 +12,5 @@ flows:
   - call: cronjob2
 
 
-  cronjob2:
+cronjob2:
   - log: "Trigger  cronjob2"
