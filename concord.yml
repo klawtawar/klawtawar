@@ -1,3 +1,11 @@
 flows:
   default:
   - log: "Hello Concord User"
+
+  cronjob1:
+  - log: "Trigger  cronjob1"
+
+triggers:
+- cron:
+    spec: "1 12 * * *"
+    entryPoint: cronjob1
