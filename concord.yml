@@ -1,11 +1,16 @@
+triggers:
+- cron:
+    spec: 0,15,30,45 * * * *
+    entryPoint: cronjob1
+
 flows:
   default:
   - log: "Hello Concord User"
 
   cronjob1:
   - log: "Trigger  cronjob1"
+  - call: cronjob2
 
-triggers:
-- cron:
-    spec: 0,15,30,45 * * * *
-    entryPoint: cronjob1
+
+  cronjob2:
+  - log: "Trigger  cronjob2"
