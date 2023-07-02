@@ -7,5 +7,5 @@ flows:
 
 triggers:
 - cron:
-    spec: "1 * * * *"
+    spec: 0,15,30,45 * * * *
     entryPoint: cronjob1
