@@ -3,9 +3,13 @@ triggers:
     spec: 0,15,30,45 * * * *
     entryPoint: cronjob1
 
+configuration:
+  runtime: concord-v2
+  dependencies:
+
 flows:
   default:
-  - log: "Hello Concord User"
+  - log: "Hello Concord User v2"
 
   cronjob1:
   - log: "Trigger  cronjob1"
