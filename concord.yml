@@ -5,6 +5,8 @@ triggers:
 
 configuration:
   runtime: concord-v2
+  dependencies:
+  - "mvn://org.python:jython-standalone:2.7.2"
 
 flows:
   default:
@@ -13,6 +15,13 @@ flows:
     body: |
       execution.variables().set('myVar', 'Hello, world!');
   - log: "js output: ${myVar}"
+
+  - script: python
+    body: |
+      x = 2 * 3;
+      execution.setVariable("result", x)
+
+  - log: "python out: ${result}"
 
   cronjob1:
   - log: "Trigger  cronjob1"
