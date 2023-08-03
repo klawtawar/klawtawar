@@ -19,7 +19,7 @@ flows:
   - script: python
     body: |
       x = 2 * 3;
-      execution.setVariable("result", x)
+      execution.variables().set('result', 'x');
 
   - log: "python out: ${result}"
 
