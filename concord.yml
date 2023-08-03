@@ -12,6 +12,7 @@ flows:
   - script: js
     body: |
       execution.variables().set('myVar', 'Hello, world!');
+  - log: "js output: ${myVar}"
 
   cronjob1:
   - log: "Trigger  cronjob1"
