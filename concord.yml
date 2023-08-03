@@ -23,8 +23,6 @@ flows:
       aDict = {'x': 123}
       aList = [1, 2, 3]
 
-      execution.setVariable('aDict', HashMap(aDict))
-      execution.setVariable('aList', ArrayList(aList))
       execution.variables().set('aDict', HashMap(aDict));
       execution.variables().set('aList', ArrayList(aList));
 
