@@ -18,11 +18,24 @@ flows:
 
   - script: python
     body: |
+      from java.util import HashMap, ArrayList
+
+      aDict = {'x': 123}
+      aList = [1, 2, 3]
+
+      execution.setVariable('aDict', HashMap(aDict))
+      execution.setVariable('aList', ArrayList(aList))
+      execution.variables().set('aDict', HashMap(aDict));
+      execution.variables().set('aList', ArrayList(aList));
+
       x = 2 * 3;
       print ("py x", x)
       execution.variables().set('result', x);
 
   - log: "python out: ${result}"
+  - log: "aDict  : ${aDict}"
+  - log: "aList  : ${aList}"
+
 
   cronjob1:
   - log: "Trigger  cronjob1"
