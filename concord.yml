@@ -9,6 +9,9 @@ configuration:
 flows:
   default:
   - log: "Hello Concord User v2"
+  - script: js
+    body: |
+      execution.variables().set('myVar', 'Hello, world!');
 
   cronjob1:
   - log: "Trigger  cronjob1"
