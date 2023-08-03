@@ -2,7 +2,7 @@ triggers:
 - cron:
     spec: 0,15,30,45 * * * *
     entryPoint: cronjob1
-
+#to start concord run command docker-compose up
 configuration:
   runtime: concord-v2
   dependencies:
